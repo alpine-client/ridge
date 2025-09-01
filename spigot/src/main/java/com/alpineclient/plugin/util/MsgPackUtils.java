@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 /**
- * @author Thomas Wearmouth <tomwmth@pm.me>
+ * @author Thomas Wearmouth
  * Created on 7/02/2024
  */
 @UtilityClass

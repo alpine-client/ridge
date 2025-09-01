@@ -17,7 +17,7 @@ import dev.rollczi.litecommands.schematic.Schematic;
 import org.bukkit.command.CommandSender;
 
 /**
- * @author Thomas Wearmouth <tomwmth@pm.me>
+ * @author Thomas Wearmouth
  * Created on 1/02/2024
  */
 public final class CommandInvalidUsage implements InvalidUsageHandler<CommandSender> {
