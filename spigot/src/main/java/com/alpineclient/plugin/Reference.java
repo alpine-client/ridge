@@ -20,9 +20,9 @@ import org.jetbrains.annotations.ApiStatus;
  */
 @ApiStatus.Internal
 public final class Reference {
-    public static final String NAME = "${pluginName}";
-    public static final String ID = "${pluginId}";
-    public static final String VERSION = "${pluginVersion}";
+    public static final String NAME = PluginInfo.NAME;
+    public static final String ID = PluginInfo.ID;
+    public static final String VERSION = PluginInfo.VERSION;
     public static final Logger LOGGER = LogManager.getLogger(NAME);
     public static final BukkitAudiences AUDIENCES = BukkitAudiences.create(PluginMain.getInstance());
     public static final Gson GSON = new GsonBuilder().disableHtmlEscaping().create();
