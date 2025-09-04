@@ -37,9 +37,6 @@ sourceSets {
 }
 
 tasks {
-    named("build") {
-        dependsOn("javadoc")
-    }
     withType<ProcessResources>().configureEach {
         expandProperties("plugin.yml")
     }
