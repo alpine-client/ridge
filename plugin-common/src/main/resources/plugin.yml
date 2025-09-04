@@ -1,0 +1,4 @@
+main: com.alpineclient.ridge.PluginMain
+name: Ridge
+version: "${version}"
+api-version: 1.13

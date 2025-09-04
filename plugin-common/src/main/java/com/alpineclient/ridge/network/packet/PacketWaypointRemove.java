@@ -1,0 +1,46 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+package com.alpineclient.ridge.network.packet;
+
+import com.alpineclient.ridge.network.Packet;
+import com.alpineclient.ridge.network.WriteOnly;
+import com.alpineclient.ridge.util.MsgPackUtils;
+import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+import org.msgpack.core.MessagePacker;
+import org.msgpack.core.MessageUnpacker;
+
+import java.io.IOException;
+import java.util.UUID;
+
+/**
+ * @author Thomas Wearmouth
+ * Created on 7/02/2024
+ */
+@WriteOnly
+public final class PacketWaypointRemove extends Packet {
+    private final UUID id;
+
+    public PacketWaypointRemove(@NotNull UUID id) {
+        this.id = id;
+    }
+
+    @Override
+    public void write(@NotNull MessagePacker packer) throws IOException {
+        MsgPackUtils.packUuid(packer, this.id);
+    }
+
+    @Override
+    public void read(@NotNull MessageUnpacker unpacker) {
+        // NO-OP
+    }
+
+    @Override
+    public void process(@NotNull Player player) {
+        // NO-OP
+    }
+}

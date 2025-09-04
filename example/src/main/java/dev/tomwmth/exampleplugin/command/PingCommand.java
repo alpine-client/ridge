@@ -6,8 +6,8 @@
 
 package dev.tomwmth.exampleplugin.command;
 
-import com.alpineclient.plugin.api.AlpineClientApi;
-import com.alpineclient.plugin.api.objects.Waypoint;
+import com.alpineclient.ridge.api.AlpineClientApi;
+import com.alpineclient.ridge.api.objects.Waypoint;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,7 +17,7 @@ import org.bukkit.entity.Player;
  * A simple command that broadcasts a 10-second waypoint of the user's location
  * to all online Alpine Client users.
  *
- * @author Thomas Wearmouth <tomwmth@pm.me>
+ * @author Thomas Wearmouth
  * Created on 30/06/2024
  */
 public final class PingCommand implements CommandExecutor {

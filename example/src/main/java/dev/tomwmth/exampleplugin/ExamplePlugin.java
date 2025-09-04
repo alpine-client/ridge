@@ -6,8 +6,8 @@
 
 package dev.tomwmth.exampleplugin;
 
-import com.alpineclient.plugin.api.AlpineClientApi;
-import com.alpineclient.plugin.api.objects.Capability;
+import com.alpineclient.ridge.api.AlpineClientApi;
+import com.alpineclient.ridge.api.objects.Capability;
 import dev.tomwmth.exampleplugin.command.PingCommand;
 import dev.tomwmth.exampleplugin.listener.EnderPearlListener;
 import org.bukkit.plugin.java.JavaPlugin;
