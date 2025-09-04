@@ -16,7 +16,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 /**
- * Represents a location in the world that is highlighted to the user.
+ * Represents a client-side cooldown shown in the Alpine Client HUD.
  *
  * @author Thomas Wearmouth
  * @since 1.3.0
@@ -42,7 +42,7 @@ public final class Cooldown {
     }
 
     /**
-     * Get the name of the cooldown.
+     * Get the unique identifier of the cooldown.
      *
      * @return the name
      */
@@ -60,7 +60,7 @@ public final class Cooldown {
     }
 
     /**
-     * Get the color of the cooldown.
+     * Get the ARGB color of the cooldown.
      *
      * @return the name
      */
@@ -78,7 +78,7 @@ public final class Cooldown {
     }
 
     /**
-     * Get the texture of the notification.
+     * Get the texture of the icon used for this cooldown.
      *
      * @return the {@link ClientResource}
      */
