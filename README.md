@@ -71,7 +71,7 @@ dependencies {
 
 <dependencies>
   <dependency>
-    <groupId>co.crystaldev</groupId>
+    <groupId>com.alpineclient</groupId>
     <artifactId>ridge-api</artifactId>
     <version>{version}</version>
   </dependency>
