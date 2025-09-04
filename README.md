@@ -1,4 +1,4 @@
-# Alpine Client: Ridge [![Version](https://lib.alpn.cloud/api/badge/latest/releases/com/alpineclient/ridge?color=A62639&name=Latest)](https://lib.alpn.cloud/#/releases/com/alpineclient/ridge)
+# Alpine Client: Ridge [![Version](https://lib.alpn.cloud/api/badge/latest/snapshots/com/alpineclient/ridge-api?color=A62639&name=Latest)](https://lib.alpn.cloud/#/snapshots/com/alpineclient/ridge-api)
 
 ### 🛡️ For Server Admins
 This plugin does the following by default:
