@@ -18,6 +18,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.text.DecimalFormat;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -88,10 +89,10 @@ public final class Formatting {
      */
     public static @NotNull String formatItemStack(@NotNull ItemStack stack, boolean useCustomName) {
         if (useCustomName && stack.hasItemMeta()) {
-            String[] split = stack.getItemMeta().getDisplayName().toLowerCase().split("[_ ]+");
+            String[] split = stack.getItemMeta().getDisplayName().toLowerCase(Locale.ROOT).split("[_ ]+");
             StringBuilder builder = new StringBuilder();
             for (String str : split) {
-                builder.append(str.substring(0, 1).toUpperCase()).append(str.substring(1)).append(" ");
+                builder.append(str.substring(0, 1).toUpperCase(Locale.ROOT)).append(str.substring(1)).append(" ");
             }
             return builder.toString().trim();
         }
@@ -110,10 +111,10 @@ public final class Formatting {
      * RED_SAND -> Red Sand
      */
     public static @NotNull String formatEnumeration(@NotNull Enum<?> anEnum) {
-        String[] split = anEnum.name().toLowerCase().split("[_ ]+");
+        String[] split = anEnum.name().toLowerCase(Locale.ROOT).split("[_ ]+");
         StringBuilder builder = new StringBuilder();
         for (String str : split) {
-            builder.append(str.substring(0, 1).toUpperCase()).append(str.substring(1)).append(" ");
+            builder.append(str.substring(0, 1).toUpperCase(Locale.ROOT)).append(str.substring(1)).append(" ");
         }
         return builder.toString().trim();
     }
