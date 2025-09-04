@@ -79,7 +79,7 @@ dependencies {
 ```
 </details>
 
-> ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/ridge-api/releases/)
+> ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/ridge/releases/)
 
 There is [documentation](https://docs.alpineclient.com/) available, however most of the functionality can be figured out by looking at the `Ridge` interface.
 
