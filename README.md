@@ -81,7 +81,7 @@ dependencies {
 
 > ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/ridge/releases/)
 
-There is [documentation](https://docs.alpineclient.com/) available, however most of the functionality can be figured out by looking at the `Ridge` interface.
+There is [documentation](https://lib.alpn.cloud/javadoc/snapshots/com/alpineclient/ridge-api/latest) available, however most of the functionality can be figured out by looking at the `Ridge` interface.
 
 <br/>
 
