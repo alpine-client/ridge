@@ -8,7 +8,7 @@
  */
 package com.alpineclient.ridge.framework;
 
-import com.alpineclient.ridge.PluginMain;
+import com.alpineclient.ridge.RidgePlugin;
 import com.alpineclient.ridge.Reference;
 import lombok.Getter;
 import org.bukkit.entity.Player;
@@ -23,7 +23,7 @@ public abstract class PluginListener implements PluginMessageListener {
     @Getter
     private final String channelId;
 
-    protected final PluginMain main = PluginMain.getInstance();
+    protected final RidgePlugin main = RidgePlugin.getInstance();
 
     protected PluginListener(String channelId) {
         this.channelId = channelId;

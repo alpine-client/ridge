@@ -8,7 +8,7 @@
  */
 package com.alpineclient.ridge.config;
 
-import com.alpineclient.ridge.PluginMain;
+import com.alpineclient.ridge.RidgePlugin;
 import com.alpineclient.ridge.Reference;
 import com.alpineclient.ridge.config.impl.GeneralConfig;
 import com.alpineclient.ridge.config.impl.MessageConfig;
@@ -57,7 +57,7 @@ public final class ConfigManager {
 
     public ConfigManager() {
         instance = this;
-        this.directory = PluginMain.getInstance().getDataFolder().toPath();
+        this.directory = RidgePlugin.getInstance().getDataFolder().toPath();
 
         if (!Files.exists(this.directory)) {
             try {

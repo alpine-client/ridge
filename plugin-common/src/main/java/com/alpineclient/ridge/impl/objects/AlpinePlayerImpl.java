@@ -8,7 +8,7 @@
  */
 package com.alpineclient.ridge.impl.objects;
 
-import com.alpineclient.ridge.PluginMain;
+import com.alpineclient.ridge.RidgePlugin;
 import com.alpineclient.ridge.api.objects.Cooldown;
 import com.alpineclient.ridge.api.objects.Notification;
 import com.alpineclient.ridge.api.objects.Waypoint;
@@ -92,6 +92,6 @@ public final class AlpinePlayerImpl implements com.alpineclient.ridge.api.object
     }
 
     private void sendPacket(Packet packet) {
-        this.bukkitPlayer.sendPluginMessage(PluginMain.getInstance(), PlayListener.CHANNEL_ID, packet.toBytes());
+        this.bukkitPlayer.sendPluginMessage(RidgePlugin.getInstance(), PlayListener.CHANNEL_ID, packet.toBytes());
     }
 }

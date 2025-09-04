@@ -46,9 +46,9 @@ import java.util.stream.Collectors;
  * Created on 21/06/2023
  */
 @ApiStatus.Internal
-public final class PluginMain extends JavaPlugin implements Ridge {
+public final class RidgePlugin extends JavaPlugin implements Ridge {
     @Getter
-    private static PluginMain instance;
+    private static RidgePlugin instance;
     {
         instance = this;
     }

@@ -8,7 +8,7 @@
  */
 package com.alpineclient.ridge.framework;
 
-import com.alpineclient.ridge.PluginMain;
+import com.alpineclient.ridge.RidgePlugin;
 import com.alpineclient.ridge.config.ConfigManager;
 import com.alpineclient.ridge.config.impl.MessageConfig;
 
@@ -17,7 +17,7 @@ import com.alpineclient.ridge.config.impl.MessageConfig;
  * Created on 07/06/23
  */
 public abstract class BaseCommand {
-    protected final PluginMain main = PluginMain.getInstance();
+    protected final RidgePlugin main = RidgePlugin.getInstance();
 
     protected final MessageConfig messageConfig = ConfigManager.getInstance().getConfig(MessageConfig.class);
 }
