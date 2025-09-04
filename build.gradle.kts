@@ -5,6 +5,7 @@ plugins {
 subprojects {
     apply {
         plugin("ridge.base-conventions")
+        plugin("ridge.spotless-conventions")
     }
 }
 
