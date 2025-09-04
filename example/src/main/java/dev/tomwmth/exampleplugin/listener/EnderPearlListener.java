@@ -1,14 +1,16 @@
 /*
+ * This file is part of Ridge - https://github.com/alpine-client/ridge
+ * Copyright (C) 2025 Crystal Development, LLC
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
-
 package dev.tomwmth.exampleplugin.listener;
 
-import com.alpineclient.plugin.api.AlpineClientApi;
-import com.alpineclient.plugin.api.objects.ClientResource;
-import com.alpineclient.plugin.api.objects.Cooldown;
+import com.alpineclient.ridge.api.AlpineClientApi;
+import com.alpineclient.ridge.api.objects.ClientResource;
+import com.alpineclient.ridge.api.objects.Cooldown;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -23,7 +25,7 @@ import java.util.UUID;
 /**
  * A simple event listener that implements a 10-second Ender Pearl cooldown.
  *
- * @author Thomas Wearmouth <tomwmth@pm.me>
+ * @author Thomas Wearmouth
  * Created on 30/06/2024
  */
 public final class EnderPearlListener implements Listener {

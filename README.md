@@ -1,4 +1,4 @@
-# Alpine Client: Plugin API [![Version](https://lib.alpn.cloud/api/badge/latest/alpine-public/com/alpineclient/api-plugin?color=A62639&name=Latest)](https://lib.alpn.cloud/#/alpine-public/com/alpineclient/api-plugin)
+# Alpine Client: Ridge [![Version](https://lib.alpn.cloud/api/badge/latest/releases/com/alpineclient/ridge?color=A62639&name=Latest)](https://lib.alpn.cloud/#/releases/com/alpineclient/ridge)
 
 ### 🛡️ For Server Admins
 This plugin does the following by default:
@@ -27,18 +27,61 @@ This plugin exposes an API that can be leveraged to add Alpine Client integratio
 
 The plugin can be added as a dependency to your Gradle buildscript like so:
 
-```gradle
+<details>
+<summary>Gradle (Kotlin DSL)</summary>
+
+```kotlin
 repositories {
-    maven("https://lib.alpn.cloud/alpine-public/")
+    maven("https://lib.alpn.cloud/releases")
 }
 
 dependencies {
-    implementation("com.alpineclient:api-plugin:{version}")
+    compileOnly("com.alpineclient:ridge-api:{version}")
 }
 ```
-> ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/alpine-client-api/releases/)
+</details>
 
-There is [documentation](https://docs.alpineclient.com/) available, however most of the functionality can be figured out by looking at the `AlpineClientApi` class. If you end up importing a class that isn't in `com.alpineclient.plugin.api` then you probably did something wrong.
+
+<details>
+<summary>Gradle (Groovy DSL)</summary>
+
+```groovy
+repositories {
+    maven {
+        url 'https://lib.alpn.cloud/releases'
+    }
+}
+
+dependencies {
+    compileOnly 'com.alpineclient:ridge-api:{version}'
+}
+```
+</details>
+
+<details>
+<summary>Maven</summary>
+
+```xml
+<repositories>
+  <repository>
+    <name>Alpine Public</name>
+    <url>https://lib.alpn.cloud/releases</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>com.alpineclient</groupId>
+    <artifactId>ridge-api</artifactId>
+    <version>{version}</version>
+  </dependency>
+</dependencies>
+```
+</details>
+
+> ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/ridge/releases/)
+
+There is [documentation](https://docs.alpineclient.com/) available, however most of the functionality can be figured out by looking at the `Ridge` interface.
 
 <br/>
 

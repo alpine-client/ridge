@@ -1,25 +1,7 @@
-plugins {
-    id("java")
-}
-
-group = "dev.tomwmth.exampleplugin"
+group = "dev.tomwmth"
 version = "1.0.0"
 
-repositories {
-    mavenCentral()
-    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://oss.sonatype.org/content/repositories/snapshots")
-    maven("https://lib.alpn.cloud/alpine-public/")
-    maven("https://repo.panda-lang.org/releases")
-}
-
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:${project.properties["spigot_version"]}")
-
-    implementation(rootProject)
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
+    compileOnly("com.alpineclient:ridge-api:1.4.+")
 }

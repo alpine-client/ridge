@@ -1,0 +1,39 @@
+[versions]
+adventure = "4.17.0"                  # https://github.com/KyoriPowered/adventure/releases
+adventureBukkit = "4.3.4"             # https://github.com/KyoriPowered/adventure-platform/releases
+annotations = "26.0.2"                # https://github.com/JetBrains/java-annotations/releases
+configlib = "4.5.0"                   # https://github.com/tomwmth/ConfigLib
+litecommands = "3.4.2"                # https://github.com/Rollczi/LiteCommands/releases
+log4j = "2.0-beta9"
+lombok = "1.18.38"                    # https://projectlombok.org/changelog
+msgpack = "0.9.8"                     # https://github.com/msgpack/msgpack-java/releases
+spigot = "1.8.8-R0.1-SNAPSHOT"        # https://spigotmc.org/
+
+# Gradle
+blossom = "2.1.0"                     # https://github.com/KyoriPowered/blossom/releases
+ideaExt = "1.2"                       # https://github.com/jetbrains/gradle-idea-ext-plugin
+mavenPublish = "0.34.0"               # https://github.com/vanniktech/gradle-maven-publish-plugin/releases
+shadow = "9.0.2"                      # https://github.com/GradleUp/shadow/releases
+spotless = "7.2.1"                    # https://github.com/diffplug/spotless/releases
+
+[libraries]
+adventure-bom = { group = "net.kyori", name = "adventure-bom", version.ref = "adventure" }
+adventure-api.module = "net.kyori:adventure-api"
+adventure-text-minimessage.module = "net.kyori:adventure-text-minimessage"
+adventure-text-serializer-legacy.module = "net.kyori:adventure-text-serializer-legacy"
+adventure-platform-bukkit = { group = "net.kyori", name = "adventure-platform-bukkit", version.ref = "adventureBukkit" }
+annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
+configlib-spigot = { group = "dev.tomwmth", name = "configlib-spigot", version.ref = "configlib" }
+litecommands-adventure-platform = { group = "dev.rollczi", name = "litecommands-adventure-platform", version.ref = "litecommands" }
+litecommands-bukkit = { group = "dev.rollczi", name = "litecommands-bukkit", version.ref = "litecommands" }
+log4j = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j" }
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
+msgpack = { group = "org.msgpack", name = "msgpack-core", version.ref = "msgpack" }
+spigotApi = { group = "org.spigotmc", name = "spigot-api", version.ref = "spigot" }
+
+# Gradle
+blossom-plugin = { module = "net.kyori.blossom:net.kyori.blossom.gradle.plugin", version.ref = "blossom" }
+ideaExt-plugin = { module = "org.jetbrains.gradle.plugin.idea-ext:org.jetbrains.gradle.plugin.idea-ext.gradle.plugin", version.ref = "ideaExt" }
+mavenPublish-plugin = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "mavenPublish" }
+shadow-plugin = { module = "com.gradleup.shadow:shadow-gradle-plugin", version.ref = "shadow" }
+spotless-plugin = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }
