@@ -36,4 +36,4 @@ sequenceOf(
     project(":$name").projectDir = file("plugin-$it")
 }
 
-include("example")
+//include("example")
