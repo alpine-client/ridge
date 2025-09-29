@@ -13,12 +13,6 @@ plugins {
     id("com.gradleup.shadow")
 }
 
-components.named<AdhocComponentWithVariants>("java") {
-    withVariantsFromConfiguration(configurations["shadowRuntimeElements"]) {
-        skip() // do not publish shaded jar to maven
-    }
-}
-
 tasks {
     named<Jar>("jar") {
         enabled = false
