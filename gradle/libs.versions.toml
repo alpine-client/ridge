@@ -5,16 +5,16 @@ annotations = "26.0.2"                # https://github.com/JetBrains/java-annota
 configlib = "4.5.0"                   # https://github.com/tomwmth/ConfigLib
 litecommands = "3.4.2"                # https://github.com/Rollczi/LiteCommands/releases
 log4j = "2.0-beta9"
-lombok = "1.18.38"                    # https://projectlombok.org/changelog
+lombok = "1.18.42"                    # https://projectlombok.org/changelog
 msgpack = "0.9.8"                     # https://github.com/msgpack/msgpack-java/releases
 spigot = "1.8.8-R0.1-SNAPSHOT"        # https://spigotmc.org/
 
 # Gradle
 blossom = "2.1.0"                     # https://github.com/KyoriPowered/blossom/releases
-ideaExt = "1.2"                       # https://github.com/jetbrains/gradle-idea-ext-plugin
+ideaExt = "1.3"                       # https://github.com/jetbrains/gradle-idea-ext-plugin
 mavenPublish = "0.34.0"               # https://github.com/vanniktech/gradle-maven-publish-plugin/releases
-shadow = "9.0.2"                      # https://github.com/GradleUp/shadow/releases
-spotless = "7.2.1"                    # https://github.com/diffplug/spotless/releases
+shadow = "9.2.2"                      # https://github.com/GradleUp/shadow/releases
+spotless = "8.0.0"                    # https://github.com/diffplug/spotless/releases
 
 [libraries]
 adventure-bom = { group = "net.kyori", name = "adventure-bom", version.ref = "adventure" }
