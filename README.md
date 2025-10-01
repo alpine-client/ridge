@@ -79,10 +79,11 @@ dependencies {
 ```
 </details>
 
-> ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/ridge/releases/)
+> ⚠️ Replace `{version}` with the [latest release](https://github.com/alpine-client/ridge/releases/).
 
-There is [documentation](https://lib.alpn.cloud/javadoc/snapshots/com/alpineclient/ridge-api/latest) available, however most of the functionality can be figured out by looking at the `Ridge` interface.
+Most of the functionality can be figured out by looking at the `Ridge` interface.
 
+[![Read the Docs](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/gitbook_vector.svg)](https://lib.alpn.cloud/javadoc/snapshots/com/alpineclient/ridge-api/latest)
 <br/>
 
 ### 🛠️ Technical Information
