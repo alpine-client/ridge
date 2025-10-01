@@ -7,6 +7,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+import org.gradle.kotlin.dsl.support.uppercaseFirstChar
 
 plugins {
     id("ridge.base-conventions")
@@ -23,6 +24,7 @@ tasks {
         duplicatesStrategy = DuplicatesStrategy.WARN
         failOnDuplicateEntries.set(true)
         archiveClassifier.set("")
+        archiveFileName.set(archiveFileName.get().uppercaseFirstChar())
 
         configureRelocations()
         configureExclusions()
