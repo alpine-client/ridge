@@ -1,12 +1,12 @@
 [versions]
-adventure = "4.17.0"                  # https://github.com/KyoriPowered/adventure/releases
-adventureBukkit = "4.3.4"             # https://github.com/KyoriPowered/adventure-platform/releases
+adventure = "4.24.0"                  # https://github.com/KyoriPowered/adventure/releases
+adventureBukkit = "4.4.1"             # https://github.com/KyoriPowered/adventure-platform/releases
 annotations = "26.0.2"                # https://github.com/JetBrains/java-annotations/releases
 configlib = "4.5.0"                   # https://github.com/tomwmth/ConfigLib
-litecommands = "3.4.2"                # https://github.com/Rollczi/LiteCommands/releases
+litecommands = "3.10.5"                # https://github.com/Rollczi/LiteCommands/releases
 log4j = "2.0-beta9"
 lombok = "1.18.42"                    # https://projectlombok.org/changelog
-msgpack = "0.9.8"                     # https://github.com/msgpack/msgpack-java/releases
+msgpack = "0.9.10"                     # https://github.com/msgpack/msgpack-java/releases
 spigot = "1.8.8-R0.1-SNAPSHOT"        # https://spigotmc.org/
 
 # Gradle
