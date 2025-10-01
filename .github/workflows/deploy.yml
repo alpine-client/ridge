@@ -70,7 +70,6 @@ jobs:
           name: v${{ env.RELEASE_VERSION }}
           files: |
             build/libs/Ridge-${{ env.RELEASE_VERSION }}.jar
-            plugin-api/build/libs/ridge-api-${{ env.RELEASE_VERSION }}.jar
           fail_on_unmatched_files: true
           make_latest: true
           prerelease: false
