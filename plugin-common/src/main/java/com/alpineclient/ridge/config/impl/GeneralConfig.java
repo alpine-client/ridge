@@ -31,7 +31,8 @@ public final class GeneralConfig extends AbstractConfig {
             " --- Module Settings --- ",
             "    <module id>: <allowed>",
             "    Any modules not included (except Cannon View) are allowed by default.",
-            "    A list of all module IDs can be found in the GitHub repository under \"MODULES.md\"."
+            "    A list of all module IDs can be found in the GitHub repository under \"MODULES.md\".",
+            "    https://github.com/alpine-client/ridge/blob/master/MODULES.md",
     })
     public Map<String, Boolean> modules = ImmutableMap.of("cannon_view", false);
 }
