@@ -103,11 +103,11 @@ public final class RidgePlugin extends JavaPlugin implements Ridge {
 
     @SuppressWarnings({"UnstableApiUsage", "unchecked"})
     private void registerAll() {
-        String packageName = this.getClass().getPackage().getName();
         Set<Class<?>> clazzes = ImmutableSet.of();
         try {
             clazzes = ClassPath.from(this.getClassLoader()).getAllClasses().stream()
-                    .filter(clazz -> clazz.getPackageName().contains(packageName))
+                    .filter(clazz -> clazz.getPackageName().contains("com.alpineclient.ridge"))
+                    .filter(clazz -> !clazz.getPackageName().contains("com.alpineclient.ridge.libs"))
                     .map(ClassPath.ClassInfo::load)
                     .collect(Collectors.toSet());
         }
