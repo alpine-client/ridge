@@ -14,6 +14,7 @@ import org.gradle.api.tasks.javadoc.Javadoc
 import org.gradle.external.javadoc.StandardJavadocDocletOptions
 import org.gradle.kotlin.dsl.expand
 import org.gradle.kotlin.dsl.getByType
+import org.gradle.kotlin.dsl.support.uppercaseFirstChar
 import org.gradle.language.jvm.tasks.ProcessResources
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -76,10 +77,10 @@ fun Jar.configureManifest() {
                 "Built-JDK" to "${System.getProperty("java.version")} (${System.getProperty("java.vendor")})",
                 "Built-By" to System.getProperty("user.name"),
                 "Built-Date" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date()),
-                "Implementation-Title" to project.rootProject.name,
+                "Implementation-Title" to project.rootProject.name.uppercaseFirstChar(),
                 "Implementation-Version" to project.rootProject.version,
                 "Implementation-Vendor" to "Crystal Development, LLC.",
-                "Specification-Title" to project.rootProject.name,
+                "Specification-Title" to project.rootProject.name.uppercaseFirstChar(),
                 "Specification-Version" to project.rootProject.version,
                 "Specification-Vendor" to "Crystal Development, LLC.",
                 "License" to "MPL-2.0",

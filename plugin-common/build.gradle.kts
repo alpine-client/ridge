@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.support.uppercaseFirstChar
+
 plugins {
     id("ridge.blossom-conventions")
 }
@@ -28,8 +30,8 @@ sourceSets {
     main {
         blossom {
             javaSources {
-                property("id", rootProject.name.lowercase())
-                property("name", rootProject.name)
+                property("id", rootProject.name)
+                property("name", rootProject.name.uppercaseFirstChar())
                 property("version", project.version.toString())
             }
         }
