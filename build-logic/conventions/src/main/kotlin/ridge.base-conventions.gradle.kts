@@ -14,7 +14,7 @@ plugins {
 plugins.withId("java") {
     configure<JavaPluginExtension> {
         toolchain {
-            languageVersion.set(JavaLanguageVersion.of(21))
+            languageVersion.set(JavaLanguageVersion.of(25))
         }
         sourceCompatibility = JavaVersion.VERSION_1_8
     }
