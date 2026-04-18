@@ -18,7 +18,6 @@ import org.gradle.kotlin.dsl.support.uppercaseFirstChar
 import org.gradle.language.jvm.tasks.ProcessResources
 import java.text.SimpleDateFormat
 import java.util.Date
-import kotlin.text.trim
 
 val Project.libs: LibrariesForLibs
     get() = rootProject.extensions.getByType()
