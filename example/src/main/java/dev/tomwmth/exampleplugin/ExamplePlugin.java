@@ -8,7 +8,7 @@
  */
 package dev.tomwmth.exampleplugin;
 
-import com.alpineclient.ridge.api.AlpineClientApi;
+import com.alpineclient.ridge.api.Ridge;
 import com.alpineclient.ridge.api.objects.Capability;
 import dev.tomwmth.exampleplugin.command.PingCommand;
 import dev.tomwmth.exampleplugin.listener.EnderPearlListener;
@@ -22,7 +22,7 @@ public final class ExamplePlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         // We intend to send cooldown information, tell the client to enable the module
-        AlpineClientApi.registerCapabilities(this, Capability.COOLDOWNS);
+        Ridge.get().registerCapabilities(this, Capability.COOLDOWNS);
 
         // Register our event listeners
         this.getServer().getPluginManager().registerEvents(new EnderPearlListener(), this);
@@ -34,6 +34,6 @@ public final class ExamplePlugin extends JavaPlugin {
     @Override
     public void onDisable() {
         // Unregister all of the capabilities that we registered
-        AlpineClientApi.unregisterCapabilities(this);
+        Ridge.get().unregisterCapabilities(this);
     }
 }

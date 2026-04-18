@@ -8,7 +8,7 @@
  */
 package dev.tomwmth.exampleplugin.listener;
 
-import com.alpineclient.ridge.api.AlpineClientApi;
+import com.alpineclient.ridge.api.Ridge;
 import com.alpineclient.ridge.api.objects.ClientResource;
 import com.alpineclient.ridge.api.objects.Cooldown;
 import org.bukkit.Material;
@@ -34,7 +34,7 @@ public final class EnderPearlListener implements Listener {
 
     // The Alpine Client API object for the cooldown
     // Since the details are always the same, we can create this ahead of time and reuse it
-    private static final Cooldown ALPINE_COOLDOWN = Cooldown.builder()
+    private static final Cooldown COOLDOWN = Cooldown.builder()
             .name("Ender Pearl")
             .color(0xFF2CCDB1)
             .duration(COOLDOWN_LENGTH)
@@ -70,7 +70,7 @@ public final class EnderPearlListener implements Listener {
 
         // Add the cooldown
         this.pearlCooldowns.put(id, currentTime + COOLDOWN_LENGTH);
-        // Send the cooldown via the Alpine Client API
-        AlpineClientApi.getPlayer(id).ifPresent(player -> player.sendCooldown(ALPINE_COOLDOWN));
+        // Send the cooldown via the API
+        Ridge.get().getPlayer(id).ifPresent(player -> player.sendCooldown(COOLDOWN));
     }
 }

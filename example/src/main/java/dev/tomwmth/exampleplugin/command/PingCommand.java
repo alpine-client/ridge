@@ -8,7 +8,7 @@
  */
 package dev.tomwmth.exampleplugin.command;
 
-import com.alpineclient.ridge.api.AlpineClientApi;
+import com.alpineclient.ridge.api.Ridge;
 import com.alpineclient.ridge.api.objects.Waypoint;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -38,7 +38,7 @@ public final class PingCommand implements CommandExecutor {
                 .duration(10_000L)
                 .build();
         // Send the waypoint to all online Alpine Client users
-        AlpineClientApi.getAllPlayers().forEach((alpinePlayer) -> alpinePlayer.sendWaypoint(waypoint));
+        Ridge.get().getAllPlayers().forEach(p -> p.sendWaypoint(waypoint));
         return true;
     }
 }
