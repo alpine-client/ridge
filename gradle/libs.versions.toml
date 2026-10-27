@@ -3,17 +3,17 @@ adventure = "4.26.1"                  # 5.x requires Java 21
 adventureBukkit = "4.4.1"             # https://github.com/KyoriPowered/adventure-platform/releases
 annotations = "26.1.0"                # https://github.com/JetBrains/java-annotations/releases
 configlib = "4.5.0"                   # https://github.com/tomwmth/ConfigLib
-litecommands = "3.10.9"               # https://github.com/Rollczi/LiteCommands/releases
+litecommands = "3.10.9"               # https://github.com/Rollczi/LiteCommands/releases # TODO: v3.11.0 drops java 8
 log4j = "2.0-beta9"                   # Included with 1.8.8 servers
-lombok = "1.18.44"                    # https://projectlombok.org/changelog
-msgpack = "0.9.11"                    # https://github.com/msgpack/msgpack-java/releases
+lombok = "1.18.48"                    # https://projectlombok.org/changelog
+msgpack = "0.9.12"                    # https://github.com/msgpack/msgpack-java/releases
 spigot = "1.8.8-R0.1-SNAPSHOT"        # Minimum server target
 
 blossom = "2.2.0"                     # https://github.com/KyoriPowered/blossom/releases
-ideaExt = "1.4.1"                     # https://github.com/jetbrains/gradle-idea-ext-plugin/releases
-mavenPublish = "0.36.0"               # https://github.com/vanniktech/gradle-maven-publish-plugin/releases
-shadow = "9.4.1"                      # https://github.com/GradleUp/shadow/releases
-spotless = "8.4.0"                    # https://github.com/diffplug/spotless/releases
+ideaExt = "1.4.1"                     # https://plugins.gradle.org/plugin/org.jetbrains.gradle.plugin.idea-ext
+mavenPublish = "0.37.0"               # https://github.com/vanniktech/gradle-maven-publish-plugin/releases
+shadow = "9.6.1"                      # https://github.com/GradleUp/shadow/releases
+spotless = "8.10.4"                    # https://github.com/diffplug/spotless/releases
 
 [libraries]
 adventure-bom = { group = "net.kyori", name = "adventure-bom", version.ref = "adventure" }

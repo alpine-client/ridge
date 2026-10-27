@@ -9,6 +9,7 @@
 import com.vanniktech.maven.publish.JavaLibrary
 import com.vanniktech.maven.publish.JavadocJar
 import com.vanniktech.maven.publish.MavenPublishBaseExtension
+import com.vanniktech.maven.publish.SourcesJar
 
 plugins {
     id("com.vanniktech.maven.publish")
@@ -31,7 +32,7 @@ extensions.configure(MavenPublishBaseExtension::class.java) {
     configure(
         JavaLibrary(
             javadocJar = JavadocJar.Javadoc(),
-            sourcesJar = true
+            sourcesJar = SourcesJar.Sources()
         )
     )
     coordinates(
